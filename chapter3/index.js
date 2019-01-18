@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 
 /* GET home page. */
 router.get('/:text', (req, res) => {
-    res.render('index', { title: 'Express', text: req.params.text });
+    res.render('index', { title: req.params.text });
 });
 
 router.post('/login', (req, res) => {
